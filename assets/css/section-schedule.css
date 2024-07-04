@@ -1,0 +1,162 @@
+section.schedule {
+    padding: 120px 0 100px 0;
+    background-color: rgba(var(--dark-color), 1);
+    clip-path: polygon(6% 6%, 100% 6%, 100% 6%, 100% 100%, 100% 100%, 6% 100%, 0 94%, 0 0);
+    margin-top: -60px;
+}
+
+section.schedule .card-location {
+    aspect-ratio: 4/1.2;
+    width: 100%;
+    background-image: url("../image/section-schedule/schedule-location.svg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+section.schedule .card-location .title {
+    color: rgba(var(--light-color), 1);
+}
+
+section.schedule .card-location .batch-one,
+section.schedule .card-location .batch-three {
+    position: absolute;
+    padding: 12px 18px;
+    width: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 0, 80% 100%, 0 100%, 0 100%, 0 0);
+    background-color: rgba(var(--dark-color), 1);
+    border: 1px solid rgba(var(--light-color), 0.12);
+}
+
+section.schedule .card-location .batch-one {
+    top: 0;
+    left: 0;
+}
+
+section.schedule .card-location .batch-three {
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 0, 80% 0, 80% 0, 80% 0, 100% 100%, 0 100%, 0 100%, 0 0);
+}
+
+section.schedule .card-location .batch-one p,
+section.schedule .card-location p.batch-three {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgba(var(--light-color), 1);
+}
+
+section.schedule .card-location p.batch-two,
+section.schedule .card-location p.batch-four {
+    position: absolute;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgba(var(--light-color), 1);
+    padding: 12px 18px;
+}
+
+section.schedule .card-location p.batch-two {
+    top: 0;
+    right: 0;
+}
+
+section.schedule .card-location p.batch-four {
+    bottom: 0;
+    right: 0;
+}
+
+section.schedule .card-schedule {
+    background-color: #202020;
+    padding: 56px 46px;
+    border-radius: 4px;
+}
+
+section.schedule .card-schedule .schedule-subtitle {
+    padding: 6px 12px;
+    background-color: rgba(var(--primary-color), 1);
+    border-radius: 2px;
+    color: rgba(var(--light-color), 1);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+section.schedule .card-schedule .title {
+    color: rgba(var(--light-color), 1);
+}
+
+section.schedule .card-schedule > .row p {
+    color: rgba(var(--light-color), 0.62);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+section.schedule .number-page {
+    color: rgba(var(--primary-color), 1);
+    bottom: -90px;
+    right: 0;
+    border-color: rgba(var(--primary-color), 1);
+}
+
+section.schedule .container .square {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(var(--primary-color), 1);
+    position: absolute;
+    animation: animationSquare 2s infinite alternate;
+}
+
+section.schedule .container .line {
+    width: 100px;
+    height: 4px;
+    background-color: rgba(var(--primary-color), 1);
+    position: absolute;
+    animation: animationLine 2s infinite alternate;
+}
+
+section.schedule .container .square-one {
+    top: 0;
+    right: -50px;
+}
+
+section.schedule .container .square-two {
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    animation-delay: 1s;
+}
+
+section.schedule .container .square-three {
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 2s;
+}
+
+section.schedule .container .line-one {
+    top: -40px;
+    left: -40px;
+}
+
+section.schedule .container .line-two {
+    top: 60%;
+    right: -50px;
+    transform: translateY(-50%);
+    animation-delay: 1s;
+}
+
+@keyframes animationSquare {
+    from {
+        transform: translateY(0);
+    } to {
+          transform: translateY(10px);
+      }
+}
+
+@keyframes animationLine {
+    from {
+        width: 100px;
+    } to {
+          width: 80px;
+      }
+}
