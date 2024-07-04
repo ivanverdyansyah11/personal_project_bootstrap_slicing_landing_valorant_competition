@@ -1,0 +1,26 @@
+footer.footer {
+    padding-bottom: 82px;
+}
+
+footer.footer .footer-brand {
+    margin-bottom: 16px;
+}
+
+footer.footer .description {
+    font-size: 0.875rem;
+}
+
+footer.footer .footer-title {
+    font-size: 1.5rem;
+    font-family: var(--anton-regular);
+    color: rgba(var(--primary-color), 1);
+}
+
+footer.footer .footer-list a {
+    font-size: 0.913rem;
+    color: rgba(var(--dark-color), 0.62);
+}
+
+footer.footer .footer-list a:hover {
+    color: rgba(var(--dark-color), 1);
+}
