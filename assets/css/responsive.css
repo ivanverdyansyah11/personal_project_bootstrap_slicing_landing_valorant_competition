@@ -1,0 +1,171 @@
+@media (max-width: 1399.98px) {
+    .title {
+        font-size: 4.75rem;
+    }
+
+    .section-gap {
+        margin-top: 110px;
+    }
+
+    section.price,
+    section.schedule,
+    section.journey,
+    section.cta {
+        padding: 110px 0 90px 0;
+    }
+
+    section.price .content-price .price-title {
+        font-size: 2.75rem;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .section-gap {
+        margin-top: 100px;
+    }
+
+    section.price,
+    section.schedule,
+    section.journey,
+    section.cta {
+        padding: 100px 0 80px 0;
+    }
+
+    section.hero .content-hero {
+        margin-bottom: 90px;
+    }
+
+    section.hero .content-hero .character-image {
+        width: 380px;
+    }
+
+    section.price .content-price .price-title {
+        font-size: 2.5rem;
+    }
+
+    section.cta .card-cta {
+        padding: 62px 42px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .content-gap {
+        margin-top: 42px;
+    }
+
+    section.hero {
+        height: 55vh;
+    }
+
+    section.hero .content-hero {
+        margin-bottom: 70px;
+    }
+
+    section.hero .content-hero .character-image {
+        width: 350px;
+    }
+
+    section.price .content-price .price-title {
+        font-size: 2.25rem;
+    }
+
+    section.price .content-price .price-title span {
+        font-size: 1rem;
+    }
+
+    section.price .content-price .price-description {
+        font-size: 1rem;
+    }
+
+    section.price .video-price {
+        aspect-ratio: 4/1.8;
+    }
+
+    section.schedule .card-location {
+        aspect-ratio: 4/2;
+    }
+
+    section.schedule .card-schedule {
+        padding: 42px 36px;
+    }
+
+    section.journey .journey-season .season .season-title {
+        font-size: 1.25rem;
+    }
+
+    section.cta .card-cta {
+        padding: 52px 32px;
+    }
+
+    section.cta .card-cta .description {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .content-gap {
+        margin-top: 32px;
+    }
+
+    section.hero {
+        height: 100vh;
+    }
+
+    section.hero .content-hero {
+        margin-bottom: 0;
+        margin-top: 120px;
+    }
+
+    section.hero .content-hero .character-image {
+        width: 400px;
+    }
+
+    section.price,
+    section.schedule,
+    section.journey,
+    section.cta {
+        clip-path: polygon(8% 4%, 100% 4%, 100% 4%, 100% 100%, 100% 100%, 8% 100%, 0 96%, 0 0);
+    }
+
+    section.price .content-price .price-title {
+        font-size: 2rem;
+    }
+
+    section.price .video-price {
+        aspect-ratio: 4/2;
+    }
+
+    section.price .wrapper-start .start-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    section.schedule .card-location {
+        aspect-ratio: 4/3;
+    }
+
+    section.schedule .card-location .batch-one,
+    section.schedule .card-location .batch-three {
+        width: 240px;
+    }
+
+    section.journey .journey-season .season .season-title {
+        font-size: 1rem;
+    }
+
+    section.cta .card-cta {
+        padding: 32px;
+    }
+}
