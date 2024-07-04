@@ -1,0 +1,12 @@
+@import 'main.css';
+@import 'navbar.css';
+@import 'topbar.css';
+@import 'section-hero.css';
+@import 'section-about.css';
+@import 'section-price-pool.css';
+@import 'section-schedule.css';
+@import 'section-team.css';
+@import 'section-journey.css';
+@import 'section-cta.css';
+@import 'footer.css';
+@import 'responsive.css';
