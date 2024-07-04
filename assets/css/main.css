@@ -1,0 +1,145 @@
+/* FONTFACE */
+@font-face {
+    font-family: 'urbanist-extrabold';
+    src: url("../font/urbanist/Urbanist-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'urbanist-bold';
+    src: url("../font/urbanist/Urbanist-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'urbanist-semibold';
+    src: url("../font/urbanist/Urbanist-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'urbanist-medium';
+    src: url("../font/urbanist/Urbanist-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'urbanist-regular';
+    src: url("../font/urbanist/Urbanist-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'anton-regular';
+    src: url("../font/anton/Anton-Regular.ttf") format("truetype");
+}
+/* END FONTFACE */
+
+
+/* ROOT VARIABLE */
+:root {
+    --primary-color: 255, 70, 85;
+    --dark-color: 17, 17, 17;
+    --light-color: 247, 247, 247;
+
+    --urbanist-extrabold: 'urbanist-extrabold', Arial, Helvetica, sans-serif;
+    --urbanist-bold: 'urbanist-bold', Arial, Helvetica, sans-serif;
+    --urbanist-semibold: 'urbanist-semibold', Arial, Helvetica, sans-serif;
+    --urbanist-medium: 'urbanist-medium', Arial, Helvetica, sans-serif;
+    --urbanist-regular: 'urbanist-regular', Arial, Helvetica, sans-serif;
+    --anton-regular: 'anton-regular', Arial, Helvetica, sans-serif;
+
+    --transition-duration: 250ms;
+}
+/* END ROOT VARIABLE */
+
+
+/* GLOBAL STYLE */
+* {
+    font-family: var(--urbanist-medium);
+    transition: var(--transition-duration);
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgba(var(--light-color), 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin-bottom: 0;
+    color: rgba(var(--dark-color), 1);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.title {
+    font-size: 5rem;
+    font-family: var(--anton-regular);
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 0.945rem;
+    line-height: 150%;
+    color: rgba(var(--dark-color), 0.62);
+}
+
+.button-outline,
+.button-outline:hover,
+.button-primary {
+    background-color: rgba(var(--dark-color), 1);
+    border: 1px solid rgba(var(--dark-color), 1);
+    padding: 13px 42px;
+    border-radius: 0;
+    font-size: 0.875rem;
+    color: rgba(var(--primary-color), 1);
+    font-family: var(--anton-regular);
+    text-transform: uppercase;
+}
+
+.button-outline,
+.button-primary:hover {
+    background-color: rgba(var(--light-color), 1);
+    color: rgba(var(--primary-color), 1) !important;
+}
+
+.section-gap {
+    margin-top: 120px;
+}
+
+.content-gap {
+    margin-top: 52px;
+}
+
+.background-primary {
+    background-color: rgba(var(--primary-color), 1);
+}
+
+.background-dark {
+    background-color: rgba(var(--dark-color), 1);
+}
+
+.number-page {
+    display: inline-block;
+    font-size: 2.5rem;
+    color: rgba(var(--dark-color), 0.12);
+    font-family: var(--anton-regular);
+    position: absolute;
+    border-top: 3px solid rgba(var(--dark-color), 0.12);
+}
+/* END GLOBAL STYLE */
