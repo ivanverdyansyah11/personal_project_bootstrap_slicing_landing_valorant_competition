@@ -1,0 +1,56 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(var(--dark-color), 1);
+    z-index: 9 !important;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: 800ms !important;
+}
+
+.topbar.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 800ms !important;
+}
+
+.topbar .topbar-link {
+    gap: 20px;
+}
+
+.topbar .topbar-link a {
+    font-size: 2rem;
+    font-family: var(--anton-regular);
+    text-transform: uppercase;
+    color: rgba(var(--light-color), 1);
+    position: relative;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    transition: 250ms;
+}
+
+.topbar .topbar-link a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgba(var(--primary-color), 1);
+    transition: 250ms;
+}
+
+.topbar .topbar-link a:hover,
+.topbar .topbar-link a.active {
+    color: rgba(var(--primary-color), 1);
+}
+
+.topbar .topbar-link a:hover:before,
+.topbar .topbar-link a.active:before {
+    right: 0;
+    width: 100%;
+    transition: 250ms;
+}
