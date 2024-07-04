@@ -1,0 +1,79 @@
+section.hero {
+    background-image: url('../image/section-hero/background-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    animation: animationBackground 9s infinite alternate !important;
+}
+
+section.hero .content-hero {
+    margin-bottom: 120px;
+}
+
+section.hero .content-hero .text-image {
+    width: 100%;
+}
+
+section.hero .content-hero .wrapper-character {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.hero .content-hero .character-image {
+    width: 440px;
+    animation: animationCharacter 3s infinite alternate;
+    position: relative;
+}
+
+section.hero .content-hero .button-hero {
+    padding: 14px 82px;
+    border-radius: 2px;
+    background-color: rgba(var(--primary-color), 1);
+    color: rgba(var(--light-color), 1);
+    font-family: var(--urbanist-semibold);
+    font-size: 0.913rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    position: relative;
+    margin-top: 36px;
+}
+
+section.hero .content-hero .button-hero:hover {
+    color: rgba(var(--primary-color), 1);
+    background-color: rgba(var(--light-color), 1);
+}
+
+section.hero .content-hero .button-hero:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 106%;
+    height: 120%;
+    background-color: transparent;
+    border: 1px solid rgba(var(--light-color), 1);
+    border-radius: 2px;
+}
+
+@keyframes animationBackground {
+    0% {
+        background-position: top center;
+    } 100% {
+        background-position: bottom center;
+    }
+}
+
+@keyframes animationCharacter {
+    0% {
+        transform: translateY(-10px);
+    } 100% {
+        transform: translateY(10px);
+    }
+}
