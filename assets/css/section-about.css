@@ -1,0 +1,95 @@
+section.about .about-content {
+    padding-top: 32px;
+    border-top: 1px solid rgba(var(--dark-color), 0.12);
+}
+
+section.about .banner-about {
+    width: 100%;
+    aspect-ratio: 4/2.5;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+section.about .row .wrapper .line {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    border-radius: 1px;
+    width: 30%;
+    height: 8px;
+    background-color: rgba(var(--primary-color), 1);
+    animation: animationLineBanner 3.5s infinite alternate;
+}
+
+section.about > .square {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(var(--primary-color), 1);
+    position: absolute;
+    animation: animationSquare 2s infinite alternate;
+}
+
+section.about > .line {
+    width: 100px;
+    height: 4px;
+    background-color: rgba(var(--primary-color), 1);
+    position: absolute;
+    animation: animationLine 2s infinite alternate;
+}
+
+section.about .square-one {
+    top: 0;
+    left: -50px;
+}
+
+section.about .square-two {
+    top: 40%;
+    right: -50px;
+    animation-delay: 1s;
+}
+
+section.about .square-three {
+    bottom: -60px;
+    right: 40%;
+    animation-delay: 2s;
+}
+
+section.about .line-one {
+    top: -40px;
+    right: 0;
+}
+
+section.about .line-two {
+    bottom: -40px;
+    left: 0;
+    animation-delay: 1s;
+}
+
+section.about .number-page {
+    bottom: -90px;
+    right: 0;
+}
+
+@keyframes animationLineBanner {
+    from {
+        width: 30%;
+    } to {
+        width: 35%;
+      }
+}
+
+@keyframes animationSquare {
+    from {
+        transform: translateY(0);
+    } to {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes animationLine {
+    from {
+        width: 100px;
+    } to {
+        width: 80px;
+    }
+}
