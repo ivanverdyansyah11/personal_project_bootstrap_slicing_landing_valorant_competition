@@ -1,0 +1,57 @@
+section.cta {
+    padding: 120px 0 100px 0;
+    background-color: rgba(var(--dark-color), 1);
+    clip-path: polygon(6% 6%, 100% 6%, 100% 6%, 100% 100%, 100% 100%, 6% 100%, 0 94%, 0 0);
+    margin-top: -60px;
+}
+
+section.cta .card-cta {
+    padding: 100px 82px;
+    width: 100%;
+    background-image: url("../image/section-cta/background-image.svg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+}
+
+section.cta .card-cta .title {
+    color: rgba(var(--light-color), 1);
+}
+
+section.cta .card-cta p {
+    color: rgba(var(--light-color), 0.62);
+    margin-top: 16px;
+    width: 80%;
+}
+
+section.cta .button-cta {
+    padding: 14px 82px;
+    border-radius: 2px;
+    background-color: rgba(var(--primary-color), 1);
+    color: rgba(var(--light-color), 1);
+    font-family: var(--urbanist-semibold);
+    font-size: 0.913rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    position: relative;
+    margin-top: 42px;
+}
+
+section.cta .button-cta:hover {
+    color: rgba(var(--primary-color), 1);
+    background-color: rgba(var(--light-color), 1);
+}
+
+section.cta .button-cta:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 106%;
+    height: 120%;
+    background-color: transparent;
+    border: 1px solid rgba(var(--light-color), 1);
+    border-radius: 2px;
+}
